@@ -9,9 +9,12 @@
 
         &-element {
                 color: var(--accent);
-            }
-// @media screen and (min-width: 480px) {
-//     margin-right: 276px;
-// }
-            
+        }
+footer & {
+        display: block;
+        margin-bottom: 20px;
+        margin-right: 0;
+
+        color: var(--text-white-color);
+        }         
         }

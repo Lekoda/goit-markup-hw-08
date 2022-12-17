@@ -96,6 +96,12 @@ body {
 .logo-element {
   color: var(--accent);
 }
+footer .logo {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 0;
+  color: var(--text-white-color);
+}
 
 .mobile-menu__button {
   position: absolute;
@@ -124,6 +130,33 @@ body {
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.signup-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 200px;
+  height: 50px;
+  margin: 0;
+  background: var(--accent);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--text-white-color);
 }
 
 .title {
@@ -167,6 +200,15 @@ body {
   background-image: url(../images/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.sign-icon {
+  margin-left: 10px;
+  /* align-self: auto; */
+  /* margin-top: 13px; */
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
 .socials {
@@ -261,6 +303,81 @@ body {
   width: 20px;
   height: 20px;
   fill: var(--elemnt-white-color);
+}
+
+address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+}
+
+.address-text {
+  color: var(--text-white-color);
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-link {
+  color: var(--text-white-opacity);
+}
+
+address a {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+address a:hover, address a:focus, address a:active {
+  color: var(--accent);
+}
+
+.signup-field {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.signup-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.signup-input::-webkit-input-placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+.signup-input::-moz-placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+.signup-input:-ms-input-placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+.signup-input::-ms-input-placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+.signup-input::placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
 }
 
 .header {
@@ -458,6 +575,13 @@ body {
   display: none;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 1200px) {
+  .activities {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .activities__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,6 +641,11 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 480px) {
+  .team__item {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__item {
@@ -621,4 +750,34 @@ body {
 .clients-link:hover, .clients-link:focus {
   border: 1px solid var(--accent);
   color: var(--accent);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--accent-bcg-color);
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 93px;
+}
+
+.footer-subtitle {
+  margin-bottom: 20px;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 1, 1428;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-white-color);
 }/*# sourceMappingURL=main.css.map */
