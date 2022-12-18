@@ -97,10 +97,20 @@ body {
   color: var(--accent);
 }
 footer .logo {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 20px;
   margin-right: 0;
   color: var(--text-white-color);
+}
+@media screen and (min-width: 1200px) {
+  footer .logo {
+    display: block;
+  }
 }
 
 .mobile-menu__button {
@@ -313,6 +323,34 @@ address {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-address {
+    margin-right: 165px;
+  }
+}
+
+.address-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .address-list {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+}
+
 .address-text {
   color: var(--text-white-color);
 }
@@ -337,16 +375,50 @@ address a:hover, address a:focus, address a:active {
   color: var(--accent);
 }
 
+@media screen and (min-width: 768px) {
+  .signup-wrap {
+    width: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .signup-wrap {
+    width: 570px;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+}
+
 .signup-field {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .signup-field {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 12px;
+  }
 }
 
 .signup-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -378,6 +450,11 @@ address a:hover, address a:focus, address a:active {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .signup-input {
+    width: 358px;
+  }
 }
 
 .header {
@@ -766,13 +843,31 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  gap: 93px;
+  gap: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-wrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 93px;
+  }
 }
 
 .footer-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 20px;
   font-style: Bold;
   font-size: 14px;
@@ -780,4 +875,11 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--text-white-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer-subtitle {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
 }/*# sourceMappingURL=main.css.map */
