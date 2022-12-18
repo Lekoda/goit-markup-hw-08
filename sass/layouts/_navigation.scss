@@ -7,6 +7,10 @@
             display: none;
             gap: 50px;
             align-items: center;
+
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                }
             }
 
             &__link {
@@ -48,6 +52,16 @@
         display: none;
         margin-left: auto;
 
+            @media screen and(min-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            @media screen and (min-width: 1200px) {
+                display: flex;
+                flex-direction: row;
+            }
+
             &__link {
             display: flex;
             align-items: center;
@@ -71,12 +85,26 @@
             &:active {
             color: var(--accent);
             }
+
+            @media screen and (min-width: 768px) {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 1.1666;
+                letter-spacing: 0.02em;
+            }
+            @media screen and (min-width: 1200px) {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.1428;
+                letter-spacing: 0.02em;
+                        }
+
         }
 
         .phone {
         margin-left: 50px;
+
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            margin-left: 0;
         }
-
-        // BURGER MENU
-
-       
+        }

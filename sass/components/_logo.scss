@@ -3,9 +3,16 @@
         color: var(--text-black-color);
         font-family: "Raleway", sans-serif;
         font-weight: 700;
-        font-size: 26px;
-        line-height: 1.1923;
+        font-size: 24px;
+        line-height: 1.1666;
         letter-spacing: 0.03em;
+
+        @media screen and (min-width: 1200px) {
+                font-weight: 700;
+                        font-size: 26px;
+                        line-height: 1.1923;
+                        letter-spacing: 0.03em;
+        }
 
         &-element {
                 color: var(--accent);
