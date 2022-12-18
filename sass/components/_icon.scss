@@ -31,3 +31,41 @@
     height: 24px;
     fill: currentColor;
 }
+
+// burger menu 
+.mobile-menu__button .icon-cross {
+    display: none;
+}
+
+// modal 
+.close-btn-icon {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent);
+    }
+}
+
+
+
+// form 
+.modal-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-input:focus+& {
+        fill: var(--accent);
+    }
+}

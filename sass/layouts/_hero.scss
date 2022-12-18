@@ -3,6 +3,18 @@
     padding-bottom: 118px;
     background: var(--accent-bcg-color);
 
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 280px;
+    }
+
+    &__container {
+        max-width: 360px;
+       
+        @media screen and (min-width: 1200px) {
+            max-width: 698px;
+        }
+    }
     &__overlay {
         max-width: 100%;
         min-width: 480px;
@@ -12,6 +24,10 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+
+        @media screen and (min-width: 1200px) {
+            max-width: 1600px;
+        }
     }
 
     &__title {
@@ -23,9 +39,15 @@
         font-weight: 900;
         font-size: 26px;
         line-height: 1.65;
-        text-align: center;
         letter-spacing: 0.06em;
+        text-align: center;
         text-transform: uppercase;
         color: var(--text-white-color);
+
+        @media screen and (min-width: 1200px) {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.3636;
+        }
     }
 }

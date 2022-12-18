@@ -566,6 +566,20 @@ address a:hover, address a:focus, address a:active {
   padding-bottom: 118px;
   background: var(--accent-bcg-color);
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
+}
+.hero__container {
+  max-width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    max-width: 698px;
+  }
+}
 .hero__overlay {
   max-width: 100%;
   min-width: 480px;
@@ -577,6 +591,11 @@ address a:hover, address a:focus, address a:active {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    max-width: 1600px;
+  }
+}
 .hero__title {
   min-width: 360px;
   margin-left: auto;
@@ -585,10 +604,17 @@ address a:hover, address a:focus, address a:active {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.65;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--text-white-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636;
+  }
 }
 
 .advantages {
