@@ -637,9 +637,39 @@ address a:hover, address a:focus, address a:active {
           align-items: center;
   color: --elemnt-grey-color;
 }
-.contacts__icon {
+.contacts__icon--mail {
   fill: currentColor;
-  margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon--mail {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon--mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+}
+.contacts__icon--phone {
+  fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon--phone {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon--phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 
 .contacts .link {

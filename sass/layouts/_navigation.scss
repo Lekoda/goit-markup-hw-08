@@ -68,9 +68,31 @@
             color: (--elemnt-grey-color);
             }
 
-            &__icon {
-            fill: currentColor;
-            margin-right: 10px;
+            &__icon--mail {
+                fill: currentColor;
+                @media screen and (min-width: 768px) {
+                    width: 14px;
+                    height: 10px;
+                    margin-right: 8px;
+                } 
+                @media screen and (min-width: 1200px) {
+                    width: 16px;
+                    height: 12px;
+                    margin-right: 10px;
+                }
+            }
+            &__icon--phone {
+                fill: currentColor;
+                @media screen and (min-width: 768px) {
+                    width: 10px;
+                    height: 14px;
+                    margin-right: 8px;
+                }
+                @media screen and (min-width: 1200px) {
+                    width: 10px;
+                    height: 16px;
+                    margin-right: 10px;
+                }
             }
         }
 
