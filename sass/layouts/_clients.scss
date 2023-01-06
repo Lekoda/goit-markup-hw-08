@@ -2,7 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding-top: 94px;
         padding-bottom: 94px;
     }
@@ -10,9 +10,10 @@
     &-list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
 
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             flex-wrap: nowrap;
         }
     }
@@ -20,15 +21,15 @@
     &-item {
         height: 92px;
 
-        @media screen and (min-width: 480px) {
+        @include mobile {
             flex-basis: calc((100% - 30px) / 2);
         }
 
-        @media screen and (min-width: 768px) {
+        @include tablet {
             flex-basis: calc((100% - 60px) / 3);
         }
 
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             width: 170px;
         }
     }

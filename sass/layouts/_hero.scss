@@ -3,35 +3,55 @@
     padding-bottom: 118px;
     background: var(--accent-bcg-color);
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding-top: 200px;
         padding-bottom: 280px;
     }
 
     &__container {
-        max-width: 360px;
-       
-        @media screen and (min-width: 1200px) {
+        width: 100%;
+        @include mobile {
+            min-width: 480px;
+        }
+        @include desktop {
             max-width: 698px;
         }
     }
     &__overlay {
-        max-width: 100%;
-        min-width: 480px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero-bg.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
+            @include retina {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-mob-2x.jpg);
+            }
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
-        @media screen and (min-width: 1200px) {
-            max-width: 1600px;
+            
+            @include tablet {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-tab.jpg);
+            
+                @include retina {
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-tab-2x.jpg);
+                    }
+                        }
+            
+            @include desktop {
+                max-width: 1600px;
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-desk.jpg);
+            
+                @include retina {
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-desk-2x.jpg);
+                    }
+                        }
         }
+        
+
     }
 
-    &__title {
-        min-width: 360px;
+    .hero__title {
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
@@ -43,11 +63,13 @@
         text-align: center;
         text-transform: uppercase;
         color: var(--text-white-color);
-
-        @media screen and (min-width: 1200px) {
+        @include mobile {
+            width: 360px;
+        }
+        @include desktop {
+            width: 696px;
             font-weight: 900;
             font-size: 44px;
             line-height: 1.3636;
         }
     }
-}

@@ -16,7 +16,7 @@ address {
     flex-direction: column;
     align-items: center;
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         align-items: normal;
     }
 }
