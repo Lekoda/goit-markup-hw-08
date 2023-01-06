@@ -8,7 +8,10 @@
         padding-top: 94px;
         padding-bottom: 94px;
     }
-
+    &__img {
+        width:100%;
+        height: auto;
+    }
     &__list {
         display: flex;
         flex-wrap: wrap;

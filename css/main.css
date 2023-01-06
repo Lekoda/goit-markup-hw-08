@@ -1238,6 +1238,10 @@ textarea {
     padding-bottom: 94px;
   }
 }
+.team__img {
+  width: 100%;
+  height: auto;
+}
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
