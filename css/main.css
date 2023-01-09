@@ -609,6 +609,10 @@ address a:hover, address a:focus, address a:active {
   color: var(--text-lightgrey-color);
 }
 
+.mob-contacts__icon:active {
+  fill: var(--accent);
+}
+
 .mob-socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -644,6 +648,12 @@ address a:hover, address a:focus, address a:active {
   padding: 0;
   margin: 0;
   cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .backdrop {
