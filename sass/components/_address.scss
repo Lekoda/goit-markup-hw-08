@@ -9,6 +9,10 @@ address {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: 165px;
     }
+
+    // @include desktop {
+    //     width: 215px;
+    // }
 }
 .address-list {
     display: flex;
@@ -24,6 +28,14 @@ address {
     color: var(--text-white-color);
 }
 
+.address-item {
+    text-align: center;
+
+    @include desktop {
+        text-align: start;
+    }
+
+}
 .address-item:not(:last-child) {
     margin-bottom: 9px;
 }

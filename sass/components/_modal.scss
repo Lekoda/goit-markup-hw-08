@@ -38,7 +38,7 @@
         padding-left: 41px;
         padding-right: 39px;
     }
-   
+
 
     background-color: var(--primary-bcg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -51,12 +51,18 @@
     }
 }
 // ФОРМА 
+
+
 textarea {
     resize: none;
 }
 
 .modal-title {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 12px;
+    // max-width: 370px;
 
     font-family: inherit;
     font-weight: 700;
@@ -156,12 +162,18 @@ textarea {
 
 .form-policy {
     display: flex;
-    max-width: 423px;
+    max-width: 369px;
+    
     height: 24px;
     margin-top: 20px;
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
+    
+    @include desktop {
+        max-width: 423px;
+    }
+
 }
 
 .label-policy {
@@ -173,8 +185,8 @@ textarea {
     margin-left: 0;
     font-family: inherit;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7142;
+    font-size: 12px;
+    line-height: 1.1666;
     letter-spacing: 0.03em;
     color: var(--text-lightgrey-color);
 
@@ -192,6 +204,11 @@ textarea {
         transition-property: border, background-color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.7142;
     }
 }
 
