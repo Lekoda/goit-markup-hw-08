@@ -28,11 +28,6 @@
         margin-bottom: 50px;
 
     }
-
-
-    // justify-content: center;
-    // gap: 8px;
-    // margin-bottom: 50px;
 }
 /* buttons  */
 .btn {
@@ -78,11 +73,27 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+
+        @include tablet {
+            flex-basis: calc((100% - 60px) / 2);
+        }
     }
 
     &-item {
-        max-width: 370px;
+        width: 100%;
         background-color: var(--primary-bcg-color);
+        
+        @include mobile {
+            width: 450px;   
+        }
+
+        @include tablet {
+            width: 354px;    
+        }
+
+        @include desktop {
+            max-width: 370px;
+        }
     }
 
     &-info {
@@ -90,6 +101,11 @@
         border-right: 1px solid var(--border-second-element);
         border-bottom: 1px solid var(--border-second-element);
         border-left: 1px solid var(--border-second-element);
+
+        @include tablet {
+            flex-grow: 1;
+        }
+
     }
 
     &-title {
@@ -117,6 +133,16 @@
     &:hover,
     &:focus {
         box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    @include desktop {
+        display: block;
     }
 }
 
