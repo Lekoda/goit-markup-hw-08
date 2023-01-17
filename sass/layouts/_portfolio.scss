@@ -84,11 +84,11 @@
         background-color: var(--primary-bcg-color);
         
         @include mobile {
-            width: 450px;   
+            max-width: 450px;   
         }
 
         @include tablet {
-            width: 354px;    
+            max-width: 354px;    
         }
 
         @include desktop {
@@ -141,9 +141,6 @@
         height: 100%;
     }
 
-    @include desktop {
-        display: block;
-    }
 }
 
 //overlay text

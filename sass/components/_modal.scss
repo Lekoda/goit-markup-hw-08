@@ -16,23 +16,22 @@
 
 .modal {
     position: absolute;
-    min-width: 100%;
-    // height: ;
+    width: 95%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    padding: 40px;
 
     @media screen and (min-width: 480px) {
-        min-width: 450px;
-        min-height: 609px;
+        max-width: 450px;
+        max-height: 609px;
         padding: 40px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 528px;
-        min-height: 581px;
+        max-width: 528px;
+        max-height: 581px;
         padding-top: 40px;
         padding-bottom: 40px;
         padding-left: 41px;
@@ -62,15 +61,18 @@ textarea {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 12px;
-    // max-width: 370px;
 
     font-family: inherit;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-grey-color);
+
+    @include mobile {
+        font-size: 20px;
+    }
 }
 
 .form-field {
@@ -80,6 +82,8 @@ textarea {
     margin-bottom: 10px;
 
     & input {
+        
+        width:100%;
         padding-top: 11px;
         padding-bottom: 11px;
         padding-left: 42px;
@@ -89,6 +93,13 @@ textarea {
         border-radius: 4px;
         cursor: pointer;
         outline: transparent;
+
+        @include mobile {
+            max-width: 370px;
+        }
+        @include desktop {
+            max-width: 448px;
+        }
     }
 }
 
@@ -112,16 +123,18 @@ textarea {
     &:focus {
         border-color: var(--accent);
     }
-        //  @media screen and (min-width: 480px) {
-        //      min-width: 370px;
-        //  }
+
 }
 
 .form-textarea {
     min-height: 120px;
+    width: 100%;
 
-    @media screen and (min-width: 480px) {
-        min-width: 370px;
+    @include mobile {
+        max-width: 370px;
+    }
+    @include desktop {
+        max-width: 448px;
     }
     padding-top: 12px;
     padding-bottom: 12px;
@@ -162,7 +175,7 @@ textarea {
 
 .form-policy {
     display: flex;
-    max-width: 369px;
+    width: 100%;
     
     height: 24px;
     margin-top: 20px;
@@ -170,6 +183,9 @@ textarea {
     justify-content: center;
     align-items: center;
     
+    @include mobile {
+        max-width: 369px;
+    }
     @include desktop {
         max-width: 423px;
     }
@@ -185,7 +201,7 @@ textarea {
     margin-left: 0;
     font-family: inherit;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 7px;
     line-height: 1.1666;
     letter-spacing: 0.03em;
     color: var(--text-lightgrey-color);
@@ -194,7 +210,7 @@ textarea {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        font-size: 7px;
         width: 16px;
         height: 15px;
         border: 2px solid #212121;
@@ -204,12 +220,14 @@ textarea {
         transition-property: border, background-color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include mobile {
+        font-size: 12px;
     }
-
     @include desktop {
         font-size: 14px;
         line-height: 1.7142;
     }
+}
 }
 
 .policy-checkbox:checked+.label-policy span {
