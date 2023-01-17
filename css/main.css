@@ -964,6 +964,17 @@ textarea {
   letter-spacing: 0.03em;
   color: var(--text-lightgrey-color);
 }
+@media screen and (min-width: 480px) {
+  .label-policy {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .label-policy {
+    font-size: 14px;
+    line-height: 1.7142;
+  }
+}
 .label-policy span {
   display: -webkit-box;
   display: -ms-flexbox;

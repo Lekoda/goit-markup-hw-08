@@ -183,6 +183,7 @@ textarea {
     justify-content: center;
     align-items: center;
     
+
     @include mobile {
         max-width: 369px;
     }
@@ -205,7 +206,15 @@ textarea {
     line-height: 1.1666;
     letter-spacing: 0.03em;
     color: var(--text-lightgrey-color);
+    
+    @include mobile {
+        font-size: 12px;
+    }
 
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.7142;
+    }
     & span {
         display: flex;
         align-items: center;
