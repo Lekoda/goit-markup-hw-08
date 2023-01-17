@@ -1018,6 +1018,7 @@ textarea {
 
 .link-policy {
   color: var(--accent);
+  text-decoration: underline;
 }
 
 .header {
