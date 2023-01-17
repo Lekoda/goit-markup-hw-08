@@ -1757,6 +1757,9 @@ footer {
   letter-spacing: 0.03em;
   color: var(--text-lightgrey-color);
 }
+.portfolio-img {
+  width: 100%;
+}
 
 .portfolio-link {
   display: block;
